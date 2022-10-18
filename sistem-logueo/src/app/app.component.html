@@ -1,0 +1,36 @@
+<div id="login" >
+  
+ 
+      <div *ngIf="!logon" class=" ingreso">
+           
+        <div id="titulo">
+          <h3>{{title}}</h3>
+        </div> 
+            <label for="email">{{entrada1}}</label>
+         
+
+         <div class="line-input">
+             <div id="imgcorreo"></div>
+             <input  [(ngModel)]='pdEmail'  id='pdEmail' type="email" [placeholder]="'ingrese el'  +entrada1">
+         </div>
+         <div>
+            <label for="password">{{entrada2}}</label>
+         </div>
+
+         <div class="line-input">
+            <div id="imgpassword"></div>
+            <input [(ngModel)]='pdPassword' id="campo2" type="password" [placeholder]="'ingrese la '+entrada2">
+         </div>
+         <div class="enviar" >
+            <button type="button" id="enviar" (click)="validarloguin()" > ingresar</button>
+         </div>
+    </div>
+ 
+ <div  *ngIf="logon">
+       <div> <h3>bienvenido al sistema</h3>
+      </div>
+      <div> hola usuario: {{ pdEmail}} </div>
+   
+ 
+  </div>
+</div>

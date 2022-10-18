@@ -1,0 +1,64 @@
+#login{
+    width: 300px ;
+    border: 1px solid black;
+    margin: auto;
+    padding: 8px  ;
+    display: block;   
+}
+.ingreso{
+    line-height: 5px;
+}
+#titulo{
+    position: relative;
+   left: 15%;
+    height: 5%;   
+    font: 1em sans-serif;
+}
+
+label{
+ 
+    display: block;
+    font-size: 1em;
+}
+
+.enviar{
+
+ bottom:0;
+margin-top: 10px;
+
+ 
+}
+#enviar{
+    background-color: rgb(30, 122, 226);
+    color: white;
+    border-radius: 15%;
+    font-size: 1em;
+    width: 30%;
+    height: 50px;
+}
+#enviar:hover{
+    cursor: pointer;
+    background-color: rgb(125, 125, 223);
+}
+#imgcorreo{
+    border: 1px solid black;
+    background-image: url(../assets/intento3.png );
+    background-repeat:no-repeat;
+    background-size: cover;
+    width:20% ;
+}
+#imgpassword{
+    border: 1px solid black;
+    background-image: url(../assets/candado.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    transform: translatey(ty);
+    width:20% ;
+}
+.line-input{
+    display: inline-flex;
+    height: 3em;
+    width: 90%;
+    margin: 10px 5px;
+
+}
